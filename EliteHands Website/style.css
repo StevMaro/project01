@@ -1,0 +1,266 @@
+body{
+  margin: 0; 
+  box-sizing: border-box;
+  background-image: url(images/cover.jpg)
+}
+.logo{
+    width: fit-content;
+    height: auto;
+    display: block;
+    float: left;
+}
+.logo img{
+    width: 4.4rem;
+}
+.navbar-wrapper{
+    background-color: black;
+    width: 100%;
+    height: 4rem;
+}
+.dropdown>li>a{
+    text-decoration: none;
+    color:white;
+    font-family: sans-serif;
+    font-size: large;
+}
+.dropdown{
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: black;
+    margin-right: 0px;
+    margin-left: 150px;
+    padding-left: 5px;
+    border-radius: 5%;
+    border: none;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 15px;
+    animation: slideDown 2.5s;
+}
+    @keyframes slideDown {
+        from {
+            transform: translate(0, -100%);
+        }
+        to {
+            transform: translate(0, 0);
+        }
+}
+.dropdown li{
+    margin: 4px;
+}
+.dropdown li :hover{
+    color:rgb(182, 178, 178);
+
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.2s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  .dropdown.slide-up {
+    animation: slideUp 2.5s;
+  }
+  @keyframes slideUp {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(0, -130%);
+    }
+}
+.social-networks{
+    display: flex;
+    background-color: transparent;
+     height: fit-content;
+     width: fit-content;
+     float: right;
+     margin-top: 13px;
+     margin-right: 10px;
+}
+.youtube-logo img{
+    height: 1.5rem;
+}
+.instalogo img{
+    height: 1.5rem;
+    border-radius: 20%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.intro-text{
+    background-color: transparent;
+    padding: 5px;
+}
+.content{
+    background-color: white;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  .dropdown-menu {
+    display: none;
+    position: relative;
+    background-color: white;
+    color: black;
+    border-radius: 8%;
+    padding: 10px;
+    margin-top: 5px;
+    width: 150px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .dropdown-menu a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-bottom: 1px solid black;
+  }
+
+  .dropdown-menu a:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown-menu a:hover {
+    background-color: rgb(155, 154, 154);
+  }
+  .intro-text {
+    animation: typing 3s infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    padding-right: 2px;
+    background-color:transparent;
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    40% {
+      width: 40%;
+    }
+    60% {
+      width: 58%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  .main-page{
+    background-color:white;
+    padding: 4px; 
+    border-radius: 8px;
+  }
+  .popular-downloads a{
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  .content2022{
+    width: 80px;
+    margin-left: 10px;
+    background-color: dodgerblue;
+    border: none;
+    cursor: pointer;
+  }
+  .tradingbibble{
+    width: 80px;
+    margin-left: 5px;
+    background-color: dodgerblue;
+    border: none;
+    cursor: pointer;
+  }
+  .smentry{
+    width: 80px;
+    margin-left: 5px;
+    background-color: dodgerblue;
+    border: none;
+    cursor: pointer;
+  }
+  .content2022:hover{
+    background-color: RoyalBlue;
+  }
+  .tradingbibble:hover{
+    background-color: RoyalBlue;
+  }
+  .smentry:hover{
+     background-color: royalblue;
+  }
+  .core{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: dodgerblue;
+    cursor: pointer;
+  }
+  .core:hover{
+     background-color: royalblue;
+  }
+  .core-contents{
+    background-color: rgba(255, 255, 255, 0.959);
+    padding: 2px; 
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  .list li{
+    text-decoration: none;
+    font-family: sans-serif;
+    padding: 3px;
+    font-weight: 200;
+    margin-bottom: 6px;
+  }
+  .download{
+    width: 200px;
+    margin-left: 30px;
+    height: 30px;
+    background-color: dodgerblue;
+    border: none;
+    cursor: pointer;
+  }
+  .homepage-icon {
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .homepage-icon:hover {
+    transform: scale(1.2);
+    background-color: rgba(68, 66, 66, 0.781);
+  }
+  .download:hover{
+    background-color: royalblue;
+  }
+.tradingview-link{
+  border: none;
+  background-color: rgb(32, 32, 32);
+  color: white;
+   border-radius: 5px;
+  cursor: pointer;
+  padding: 4px;
+  padding: 7px;
+  
+}
+.tradingview-link:hover{
+  background-color: rgb(70, 68, 68);
+}
